@@ -1,0 +1,26 @@
+aside {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    margin: 30px;
+    opacity: 90%;
+    padding: 20px;
+    width: 300px;
+}
+
+nav ul li {
+    background: url('../images/panel.png') no-repeat;
+    height: 100px;
+    width: 250px;
+    margin: 0 auto 30px auto;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-top: 32px;
+    text-transform: uppercase;
+}

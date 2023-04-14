@@ -1,3 +1,5 @@
-body {
-    color: #f76c6c;
-}
+@charset "utf-8";
+
+@import 'pico.min.css';
+@import 'global.css';
+@import 'menu.css';

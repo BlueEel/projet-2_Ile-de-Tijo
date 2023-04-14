@@ -1,0 +1,18 @@
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --font-size: 1.1rem;
+    --white-color: #fff;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+.background {
+    background: url('../images/bg.png') no-repeat;
+    background-size: cover;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}

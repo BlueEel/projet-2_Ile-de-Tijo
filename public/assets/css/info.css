@@ -1,0 +1,13 @@
+:root{
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+article{
+    display: grid;
+}

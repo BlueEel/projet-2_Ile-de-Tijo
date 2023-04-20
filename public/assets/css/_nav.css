@@ -1,0 +1,80 @@
+aside {
+    --navlink-padding: 2rem;
+    /* background-color: white; */
+    backdrop-filter: blur(5px);
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    top: var(--body-spacing);
+    left: var(--body-spacing);
+    bottom: var(--body-spacing);
+    width: var(--nav-width);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside > nav {
+    position: fixed;
+    width: var(--nav-width);
+}
+
+aside > nav > ul:last-of-type {
+    margin: 0;
+    padding: 0;
+}
+
+aside > nav > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0rem;
+    padding: 0rem; */
+}
+
+aside > nav > ul > li:hover {
+    transform: rotate(5deg);
+}
+
+aside > nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Chelsea Market', cursive;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+aside > nav > ul > li > a:hover {
+    /* background-image: url(img/planche-rouge.png); */
+    filter: brightness(130%);
+}
+
+.koala_tete,
+.planche,
+.planche-rouge {
+    background-image: url('/assets/images/planche.png');
+    background-position: center;
+    background-size: contain;
+    height: calc((var(--nav-width) - var(--navlink-padding)) * 96/265);
+    width: calc(var(--nav-width) - var(--navlink-padding));
+    padding: var(--navlink-padding);
+}
+
+.planche-rouge {
+    background-image: url('/assets/images/planche-rouge-foncé.png');
+}
+
+.koala_tete {
+    background-image: url('/assets/images/koala_tete.png');
+}
+.koala_tete:hover {
+    background-image: url('/assets/images/koala_tete_sourire.png');
+}

@@ -1,0 +1,51 @@
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --font-size: 1.1rem;
+    --white-color: #fff;
+    --title-font: 'Chelsea Market', sans-serif;
+    --background-input-field: #CF7F42;
+    --border-input-field: #81593A;
+    --nav-width: 270px;
+    --body-spacing: 3rem;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+body > main {
+    backdrop-filter: blur(5px);
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: var(--body-spacing);
+    margin-left: calc(var(--body-spacing) * 2 + var(--nav-width));
+    margin-right: var(--body-spacing);
+    padding: var(--block-spacing-vertical);
+    width: auto;
+}
+
+.background {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background: url('/assets/images/background.png') no-repeat;
+    background-size: cover;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}

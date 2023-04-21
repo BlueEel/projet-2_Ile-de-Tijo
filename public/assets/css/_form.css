@@ -1,0 +1,16 @@
+input, textarea, button {
+    background-color: var(--background-input-field);
+    border: 1px solid var(--border-input-field);
+    color: var(--textColor-input-field);
+    font-weight: bold;
+}
+
+.birthday {
+    margin-left: -100px;
+    padding: 15px
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+}

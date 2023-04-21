@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Réservation en ligne au parc de l'Île de Tijo{% endblock %}
+{% block description %}Réservez votre place pour un moment de détente sur l'Île de Tijo{% endblock %}
+
+{% block content %}
+    <h2>Réservation</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum pariatur dolores corrupti eaque minus commodi, iusto delectus quam quae molestias quis nobis amet natus eos, fugit cupiditate magni tenetur dolor!</p>
+    <p class="error">
+        {% for error in errors %}
+            {{error}}<br>
+        {% endfor %}
+    </p>
+    <form name="booking" method="post" action="">
+        <div class="grid">
+            <input type="text" id="lastname" name="lastname" max="255" placeholder="Nom">
+            <input type="text" id="firstname" name="firstname" max="255" placeholder="Prénom">
+        </div>
+        <input type="tel" id="phone" name="phone" max="100" placeholder="Téléphone">
+        <input type="email" id="email" name="email" max="10" placeholder="Email">
+        <div class="grid">
+            <input type="date" id="date" name="date">
+            <input type="time" id="time" name="time">
+            <p>Anniversaire</p>
+            <input class="birthday" type="radio" id="birthday" name="birthday" value="">
+        </div>
+        <textarea name="comment" rows="5">Commentaire :
+        • Objet de la réservation
+        • Le nombre d'enfants</textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+{% endblock %}

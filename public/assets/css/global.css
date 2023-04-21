@@ -16,3 +16,13 @@ body {
     inset: 0;
     z-index: -1;
 }
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    height: auto;
+    margin: 30px;
+    opacity: 90%;
+    padding: 20px;
+    width: auto;
+}

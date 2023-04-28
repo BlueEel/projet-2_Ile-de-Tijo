@@ -4,4 +4,6 @@
 @import '_global.css';
 /* @import 'menu.css'; */
 @import '_nav.css';
+@import 'jeux.css';
+@import 'snack.css';
 @import 'info.css';

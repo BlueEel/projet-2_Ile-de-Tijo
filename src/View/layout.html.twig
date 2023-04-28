@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap">
 		<link rel="stylesheet" href="/assets/css/style.css" media="screen">
+         {% block stylesheet %}{% endblock %}
 	</head>
 	<body>
 		<div class="background"></div>
@@ -28,5 +29,6 @@
 		<main>
 			{% block content %}{% endblock %}
 		</main>
+        {% block javascript %}{% endblock %}
 	</body>
 </html>

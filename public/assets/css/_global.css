@@ -1,6 +1,6 @@
 :root {
-    --font-family: 'Open Sans', sans-serif;
-    --font-size: 1.1rem;
+    --font-family: 'Chelsea Market','Open Sans', sans-serif;
+    --font-size: 100%;
     --white-color: #fff;
 
     --nav-width: clamp(220px, 16.875rem, 400px);

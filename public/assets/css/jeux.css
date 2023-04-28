@@ -6,16 +6,12 @@
 
 .swiper {
     width: 425px;
-    height: 425px;
+    height: 500px;
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* Center slide content vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     }
 
     .block1 {
@@ -32,7 +28,7 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        background-color: transparent;
+    background-color: transparent;
     border-style: none;
     }
 

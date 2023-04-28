@@ -1,13 +1,13 @@
 .TitreSnack {
-    text-align: center;
     font-family: 'Chelsea Market', cursive;
     font-size:xx-large;
+    text-align: center;
 }
 
 .Menus {
-    text-align: center;
     font-family: 'Chelsea Market', cursive;
     font-size: xx-large;
+    text-align: center;
 }
 
 .ImgMenus {
@@ -38,23 +38,28 @@
     }
   }
 
-  .carte {
-    animation-name: flotter;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes flotter {
-    from { transform: translate(0, 0); }
-    to { transform: translate(0, -10px); }
-  }
-
   .Carte {
-    text-align: center;
     font-family: 'Chelsea Market', cursive;
     font-size: xx-large;
+    text-align: center;
   }
+
+  .carteimg {
+    animation: float 2s ease-in-out infinite
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
 
 
 

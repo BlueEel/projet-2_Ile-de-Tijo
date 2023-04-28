@@ -14,4 +14,5 @@ return [
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
     'snack' => ['SnackController', 'index',],
+    'jeux' => ['JeuxController', 'index',],
 ];

@@ -1,0 +1,46 @@
+.Titles {
+    font-family: 'Chelsea Market', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.swiper {
+    width: 425px;
+    height: 425px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide content vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .block1 {
+        float:left;
+    }
+
+    .block2 {
+        float: right;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: transparent;
+    border-style: none;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+    color: white;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: white;
+    }

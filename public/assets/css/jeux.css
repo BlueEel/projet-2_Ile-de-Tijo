@@ -1,3 +1,28 @@
+@media screen and (max-width: 750px) {
+    .containeur {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Titles {
+      font-size: medium;
+      margin-top: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
 .Titles {
     font-family: 'Chelsea Market', cursive;
     font-size: xx-large;
@@ -5,20 +30,28 @@
 }
 
 .swiper {
-    width: 425px;
+    width: 420px;
     height: 500px;
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
-    .block1 {
+    .containeur {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Categorie1 {
         float:left;
     }
 
-    .block2 {
+    .Categorie2 {
         float: right;
     }
 
@@ -28,7 +61,7 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-    background-color: transparent;
+        background-color: transparent;
     border-style: none;
     }
 

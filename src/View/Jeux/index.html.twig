@@ -1,0 +1,103 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+	Bienvenue sur le site du parc de l'Île de Tijo
+{% endblock %}
+
+{% block description %}
+	Venez découvrir le parc de l'Île de Tijo
+{% endblock %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+{% endblock %}
+
+{% block content %}
+
+	<h1 class="Titles">JEUX :</h1>
+	<p>Sur l'Île de Tijo, vous pouvez trouver une large sélection de jeux adaptés à tous les âges et à tous les goûts. Explorez notre collection et trouvez celui qui convient le mieux à vos préférences.
+	</p>
+
+	<div class="containeur">
+
+		<div class="Categorie1">
+
+			<h2 class="Titles">De 0 à 3 ans :</h2>
+
+			<div class="swiper">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<img src="assets/images/jeu1.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu2.PNG">
+					</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+
+
+		<div class="Categorie2">
+
+			<h3 class="Titles">De 3 à 12 ans :</h3>
+
+			<div class="swiper">
+
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<img src="assets/images/jeu3.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu4.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu5.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu6.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu7.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu8.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu9.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu10.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu11.PNG">
+					</div>
+					<div class="swiper-slide">
+						<img src="assets/images/jeu12.PNG">
+					</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block javascript %}
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="/assets/js/script.js"></script>
+{% endblock %}
+
+

@@ -10,10 +10,19 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap">
 		<link rel="stylesheet" href="/assets/css/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="icon" type="image/png" href="img/koala_tete.png"/>
 	</head>
 	<body>
 		<div class="background"></div>
-		<aside>
+		<aside class="burger">
+			<div class="burgerMenu">
+				<span class="burger-menu-line"></span>
+				<span class="burger-menu-line"></span>
+				<span class="burger-menu-line"></span>
+			</div>
+		</aside>
+		<aside class="nav">
 			<nav>
 				<ul>
 					<li><a class="koala_tete" href="#"></a></li>
@@ -28,5 +37,118 @@
 		<main>
 			{% block content %}{% endblock %}
 		</main>
+
+
+		<footer class="footer">
+			<span class="footer-endline"></span>
+			<div class="grid">
+				<div class="footer-element">
+					<h4>Venez vous Amusez !</h4>
+					<ul>
+						{# <li><a href="#">Infos Pratiques</a></li> #}
+						<li>
+							<a href="#"><img class="map" src="/assets/images/map_one.png" alt="carte"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-element">
+					<h4>Réserver Votre Moment !</h4>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">JOUR</th>
+								<th scope="col">HORAIRES</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">Lundi</td>
+								<td>⛔ Fermé</td>
+							</tr>
+							<tr>
+								<td scope="row">Mardi</td>
+								<td>⛔ Fermé</td>
+							</tr>
+							<tr>
+								<td scope="row">Mercredi</td>
+								<td>✅ 11h - 19h</td>
+							</tr>
+							<tr>
+								<td scope="row">Jeudi</td>
+								<td>⛔ Fermé</td>
+							</tr>
+							<tr>
+								<td scope="row">Vendredi</td>
+								<td>⛔ Fermé</td>
+							</tr>
+							<tr>
+								<td scope="row">Samedi</td>
+								<td>✅ 11h - 19h</td>
+							</tr>
+							<tr>
+								<td scope="row">Dimanche</td>
+								<td>✅ 11h - 19h</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td></td>
+								<td></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="footer-element">
+					<h4>Contactez-nous !</h4>
+					<ul class="phone_adress">
+						<li>
+							05 46 89 30 60
+						</li>
+						<li>
+							06 09 55 90 19
+						</li>
+						<br>
+						<li>ZAC de la Varenne, Rue Louis Pasteur, 17430 Tonnay-Charente</li>
+					</ul>
+				</div>
+				<div class="footer-element">
+					<h4>Suivez-nous !</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/people/L%C3%AEle-De-Tijo/100064368324204/">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="https://www.instagram.com/liledetijo/">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://www.youtube.com/@liledetijo9858/featured">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+					<a href="#"><img src="/assets/images/koala-ile.png" alt="ile de tijo"></a>
+				</div>
+			</div>
+			<div class="waivy">
+				<span style="--i:1">Ouvert</span>
+				<span style="--i:2">tous</span>
+				<span style="--i:3">les</span>
+				<span style="--i:4">jours</span>
+				<span style="--i:5">pendant</span>
+				<span style="--i:6">les</span>
+				<span style="--i:7">vacances</span>
+				<span style="--i:8">y</span>
+				<span style="--i:9">compris</span>
+				<span style="--i:10">les</span>
+				<span style="--i:11">jours</span>
+				<span style="--i:12">fériés</span>
+			</div>
+			<span class="footer-endline"></span>
+			<p>© Tous droits réservés 2018-2023 | France | Mentions légales | CGU |
+				<a href="#" alt="Politique de confidentialité">Politique de confidentialité</a>
+				| Politique des cookies</p>
+		</footer>
+		<div class="btnScrollToTop" data-scroll="up" type="button">
+			<img src="/assets/images/doigt_haut_1.png" alt="Scroll to top"/>
+		</div>
+		<script src="/assets/js/script_btn.js"></script>
 	</body>
-</html></div></body></html>
+</html>

@@ -78,3 +78,44 @@ aside > nav > ul > li > a:hover {
 .koala_tete:hover {
     background-image: url('/assets/images/koala_tete_sourire.png');
 }
+
+/* RESPONSIVE & MENU BURGER */
+
+@media screen and (max-width: 750px) {
+    aside {
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+    .nav {
+        display: none;
+    }
+    .burger {
+        width: 50px;
+        height: 50px;
+    }
+
+    .burgerMenu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border: #662E13 2px solid;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #efac6a, #c99159);
+    }
+    .burgerMenu:hover {
+        cursor: pointer;
+        background: #C07442;
+        box-shadow: inset 10px 10px 15px #905732,
+                    inset -10px -10px 15px #f09153;
+    }
+    .burger-menu-line {
+        border: #662E13 3px solid;
+        border-radius: 10px;
+        width: 30px;
+        height: 5px;
+    }
+}

@@ -1,0 +1,101 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Bienvenue sur l'Île de Tijo
+{% endblock %}
+{% block description %}Venez découvrir le parc de l'Île de Tijo
+{% endblock %}
+
+{% block content %}
+	<div>
+		<h1>Infos pratiques</h1>
+		<p>Parc extérieur avec de nombreux jeux gonflables et jeux d'eau ainsi qu'un parcour de karting, la direction se donne le droit d'ouvrir et de fermer le parc exterieur suivant les intemperies ou toutes cause autres particulières</p>
+		<div class="grid">
+			<article>
+				<h2>Horaires d'Ouverture</h2>
+				<p>Pendant les vacances ouvert tous les jours même les jours fériés</p>
+				<table role="grid">
+					<thead>
+						<tr>
+							<th scope="col">Jour</th>
+							<th scope="col">Horaires</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Lundi</th>
+							<td>Fermé</td>
+						</tr>
+						<tr>
+							<th scope="row">Mardi</th>
+							<td>Fermé</td>
+						</tr>
+						<tr>
+							<th scope="row">Mercredi</th>
+							<td>Ouvert de 11h jusqu'à 19h</td>
+						</tr>
+						<tr>
+							<th scope="row">Jeudi</th>
+							<td>Fermé</td>
+						</tr>
+						<tr>
+							<th scope="row">Vendredi</th>
+							<td>Fermé</td>
+						</tr>
+						<tr>
+							<th scope="row">Samedi</th>
+							<td>Ouvert de 11h jusqu'à 19h</td>
+						</tr>
+						<tr>
+							<th scope="row">Dimanche</th>
+							<td>Ouvert de 11h jusqu'à 19h</td>
+						</tr>
+					</tbody>
+				</table>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6768.694101309603!2d-0.89553!3d45.952551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48013ee221f720d3%3A0xd78a090b38b8ea30!2sL&#39;%C3%AEle%20de%20Tijo!5e1!3m2!1sfr!2sus!4v1682668065278!5m2!1sfr!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</article>
+			<div class="article-right">
+				<article>
+					<h2>Où sommes-nous situés ?</h2>
+					<p>
+						À 10 minutes de Rochefort, en Charente-Maritime (région Nouvelle-Aquitaine), dans la zone commerciale de La Varenne, à Tonnay-Charente.
+						<br>
+						Facile d'accès par la voie rapide ou la départementale, que vous soyez de passage en vacances ou en résidence permanente, passez nous dire bonjour avec vos enfants.
+						<br>
+					</p>
+				</article>
+				<article>
+					<h2>Durée illimitée</h2>
+					<p>
+						0 - 3 ans : 6,50 euros
+						<br>
+						4 - 12 ans : 9,50 euros
+						<br>
+						Gratuit pour les accompagnateurs
+					</p>
+				</article>
+			</div>
+		</div>
+		<div>
+			<article>
+				<h2>Groupes</h2>
+				<p>Que vous soyez une association, un centre ou une école, notre parc vous propose un tarif préférentiel.
+																								Nous vous proposons également des devis personnalisés.
+																								Tous les jeux sont accessibles aux enfants (hormis jeux à pièces). Les enfants restent sous la responsabilité des accompagnateurs (vous devez apporter les fiches sanitaires et trousse à pharmacie).
+																								Reservation conseillée (pour être sûr d'avoir de la place).
+				</p>
+				<span></span>
+                <h2>C.E</h2>
+				<div class="grid">
+					<img src="assets/images/image-tijo-1.jpg" alt=""/>
+					<img src="assets/images/image-tijo-2.jpg" alt=""/>
+					<img src="assets/images/image-tijo-3.jpg" alt=""/>
+                </div>
+                <p>Afin de donner la possibilité aux membres de votre entreprise de découvrir notre parc avec leurs enfants, nous mettons à votre disposition des carnets de billetterie à des tarifs préférentiels.
+                <br><br>
+                Nous pouvons vous proposer de privatiser le parc pour vous ou bien juste un espace pour votre groupe.
+                Plusieurs formules sont au choix alors n'hésitez pas à nous contacter pour un devis personnalisé.
+                </p>
+			</article>
+		</div>
+	</div>
+{% endblock %}

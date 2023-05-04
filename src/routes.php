@@ -16,4 +16,5 @@ return [
     'infos' => ['InfosController', 'index',],
     'snack' => ['SnackController', 'index',],
     'jeux' => ['JeuxController', 'index',],
+    'gallerie' => ['GallerieController', 'index',],
 ];

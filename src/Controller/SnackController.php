@@ -9,6 +9,6 @@ class SnackController extends AbstractController
      */
     public function index(): string
     {
-        return $this->twig->render('Snack/index.html.twig');
+        return $this->twig->render('snack/index.html.twig');
     }
 }

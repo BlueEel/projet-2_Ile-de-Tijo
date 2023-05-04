@@ -1,8 +1,6 @@
-<?php 
+<?php
 
 namespace App\Model;
-
-use PDO;
 
 class AdminBookingManager extends AbstractManager
 {
@@ -22,11 +20,7 @@ class AdminBookingManager extends AbstractManager
      */
     public function del(int $id)
     {
-        $statement = $this->pdo->prepare("DELETE FROM " . self::TABLE . " WHERE id = :id");
-        $statement->bindValue(':id', $id, PDO::PARAM_INT);
-        $statement->execute();
-        //return (int)$this->pdo->lastInsertId();
-        return $statement->rowCount();
+        $query = "DELETE FROM " . self::TABLE . " WHERE id = $id";
+        return $this->pdo->query($query)->execute();
     }
-
 }

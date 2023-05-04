@@ -10,8 +10,8 @@ input[placeholder] {
 }
 
 .error {
-    text-shadow: #ff0000 0.1em 0.1em 0.2em;
-    color: #fff;
+    text-shadow: #fff 0.1em 0.1em 0.2em;
+    color: #ff0000;
     font-weight: bold;
 }
 

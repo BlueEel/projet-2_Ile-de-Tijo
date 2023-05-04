@@ -4,9 +4,11 @@
 
 {% block content %}
     <h2>Administration : Affichage des réservations</h2>
-    <form action="bookings/delete" method="post">
-        <table id="tabAdminBookings">
-            {% for booking in bookings %}
+
+    <table id="tabAdminBookings">
+        <!-- On parcourt le tableau des entrées depuis la BDD, puis on les affiche -->
+        {% for booking in bookings %}
+            <form action="bookings/delete" method="post">
                 <tr>
                     <td>
                         <b>#{{ booking.id }}</b>&nbsp;-&nbsp;
@@ -16,13 +18,14 @@
                         <a href="mailto:{{ booking.email }}">{{ booking.email }}</a>&nbsp;-&nbsp;
                         {{ booking.date }}&nbsp;-&nbsp;
                         {{ booking.time }}
-                        {% if booking.comment != '' %} <br> {{ booking.comment }} {% endif %}
+                        {% if booking.comment != '' %} <br> {{ booking.comment }} {% endif %}<br><br>
+                        <input type="hidden" name="id" value="{{ booking.id }}>">
+                        <input type="submit" value="Supprimer" />
                     </td>
-                    <td><input type="submit" value="Supprimer" /></td>
                 </tr>
-            {% else %}
-                <tr><td><b>Aucune réservation actuellement.</b></td></tr>
-            {% endfor %}
-        </table>
-    </form>
+            </form>
+        {% else %}
+            <b>Il n'y a actuellement aucune réservation</b>
+        {% endfor %}
+    </table>
 {% endblock %}

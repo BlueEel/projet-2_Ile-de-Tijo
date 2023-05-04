@@ -28,19 +28,7 @@ class AdminBookingController extends AbstractController
             $id = trim($_POST['id']);
             $adminBookingManager = new AdminBookingManager();
             $adminBookingManager->del((int)$id);
-
-            header('Location:/admin');
+            header('Location: /admin/bookings');
         }
     }
-
-    /**
-     * Show booking
-     */
-    /*public function show(int $id): string
-    {
-        $adminManager = new AdminManager();
-        $item = $adminManager->selectOneById($id);
-
-        return $this->twig->render('Admin/show.html.twig', ['item' => $item]);
-    }*/
 }

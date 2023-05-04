@@ -1,4 +1,4 @@
-CREATE TABLE `reservation` (
+CREATE TABLE `booking` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `lastname` VARCHAR(255) NOT NULL,
   `firstname` VARCHAR(255) NOT NULL,

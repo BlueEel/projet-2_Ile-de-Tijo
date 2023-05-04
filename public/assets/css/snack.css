@@ -1,9 +1,3 @@
-.TitreSnack {
-    font-family: 'Chelsea Market', cursive;
-    font-size:xx-large;
-    text-align: center;
-}
-
 .Menus {
     font-family: 'Chelsea Market', cursive;
     font-size: xx-large;
@@ -13,54 +7,48 @@
 .ImgMenus {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    height: 400px;
-  }
+}
 
-  .ImgMenus img {
+.ImgMenus img {
     width: 48%;
     height: auto;
     animation: float 2s ease-in-out infinite;
-  }
+}
 
-  @keyframes float {
+@keyframes float {
     0% {
-      transform: translatey(0px);
+        transform: translatey(0px);
     }
-    50% {
-      transform: translatey(-10px);
-    }
-    100% {
-      transform: translatey(0px);
-    }
-  }
 
-  .Carte {
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.Carte {
     font-family: 'Chelsea Market', cursive;
     font-size: xx-large;
     text-align: center;
-  }
+}
 
-  .carteimg {
+.carteimg {
     animation: float 2s ease-in-out infinite
-  }
+}
 
-  @keyframes float {
+@keyframes float {
     0% {
-      transform: translatey(0px);
+        transform: translatey(0px);
     }
+
     50% {
-      transform: translatey(-10px);
+        transform: translatey(-10px);
     }
+
     100% {
-      transform: translatey(0px);
+        transform: translatey(0px);
     }
-  }
-
-
-
-
-
+}

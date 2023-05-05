@@ -1,75 +1,54 @@
 @media screen and (max-width: 750px) {
     .containeur {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .Titles {
-      font-size: medium;
-      margin-top: 20px;
+        font-size: medium;
+        margin-top: 20px;
     }
 
     .swiper {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
 
     .swiper-slide {
-      width: 100%;
-      text-align: center;
-      font-size: 14px;
-      display: block;
-      margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 20px;
     }
-  }
-
-.Titles {
-    font-family: 'Chelsea Market', cursive;
-    font-size: xx-large;
-    text-align: center;
 }
 
 .swiper {
-    width: 420px;
-    height: 500px;
-  }
+    width: 80%;
+    height: 90%;
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
-    .containeur {
-        display: flex;
-        justify-content: space-between;
-    }
+.swiper-button-next,
+.swiper-button-prev {
 
-    .Categorie1 {
-        float:left;
-    }
-
-    .Categorie2 {
-        float: right;
-    }
-
-    img {
-        border-radius: 10px;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        background-color: transparent;
+    background-color: transparent;
     border-style: none;
-    }
+}
 
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    filter: drop-shadow(2px 2px 2px #646161);
     color: white;
-    }
+}
 
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: white;
-    }
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #646161;
+    border: none;
+}

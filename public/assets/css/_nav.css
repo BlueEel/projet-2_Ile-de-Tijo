@@ -78,3 +78,16 @@ aside > nav > ul > li > a:hover {
 .koala_tete:hover {
     background-image: url('/assets/images/koala_tete_sourire.png');
 }
+
+/* RESPONSIVE & MENU BURGER */
+
+@media screen and (max-width: 750px) {
+    aside {
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+    .nav {
+        display: none;
+    }
+}

@@ -4,6 +4,7 @@
 @import '_global.css';
 /* @import 'menu.css'; */
 @import '_nav.css';
+@import '_footer.css';
 @import 'jeux.css';
 @import 'snack.css';
 @import 'info.css';

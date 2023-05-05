@@ -10,25 +10,26 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap">
 		<link rel="stylesheet" href="/assets/css/style.css" media="screen">
-         {% block stylesheet %}{% endblock %}
-	</head>
-	<body>
-		<div class="background"></div>
-		<aside>
-			<nav>
-				<ul>
-					<li><a class="koala_tete" href="/"></a></li>
-					<li><a class="planche" href="#">Jeux</a></li>
-					<li><a class="planche" href="#">Gallerie</a></li>
-					<li><a class="planche" href="#">Snack</a></li>
-					<li><a class="planche" href="/infos">Infos Pratiques</a></li>
-					<li><a class="planche-rouge" href="#">Réservation</a></li>
-				</ul>
-			</nav>
-		</aside>
-		<main>
-			{% block content %}{% endblock %}
-		</main>
-        {% block javascript %}{% endblock %}
-	</body>
-</html>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="icon" type="image/png" href="img/koala_tete.png"/> {% block stylesheet %}{% endblock %}
+		</head>
+		<body>
+			<div class="background"></div>
+			<aside class="nav">
+				<nav>
+					<ul>
+						<li><a class="koala_tete" href="/"></a></li>
+						<li><a class="planche" href="#">Jeux</a></li>
+						<li><a class="planche" href="#">Gallerie</a></li>
+						<li><a class="planche" href="#">Snack</a></li>
+						<li><a class="planche" href="/infos">Infos Pratiques</a></li>
+						<li><a class="planche-rouge" href="#">Réservation</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<main>
+				{% block content %}{% endblock %}
+			</main>
+			{% include '_footer.html.twig' %}
+		</body>
+	</html>

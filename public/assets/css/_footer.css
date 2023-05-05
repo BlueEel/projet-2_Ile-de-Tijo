@@ -62,42 +62,12 @@ ul li {
     background-color: #D5FBE2;
 }
 
-.container-waivy {
-    display: flex;
-    justify-content: center;
-}
-
-.waivy {
+footer > p {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    font-size: 1.2rem;
+    margin: none;
 }
-
-.waivy-span {
-    position: relative;
-    display: inline-block;
-    color: #207864;
-    /* animation: waivy 3s infinite;
-    animation-delay: calc(.1s * var(--i)); */
-    padding: .2rem;
-  }
-  @keyframes waivy {
-      0%,40%,100% {
-          transform: translateY(0)
-        }
-        20% {
-            transform: translateY(-20px)
-        }
-    }
-
-    footer > p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: none;
-    }
 
     .container-footer-end {
         display: flex;

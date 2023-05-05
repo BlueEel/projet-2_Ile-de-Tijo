@@ -10,14 +10,3 @@ window.addEventListener("scroll", () => {
         btnScrollToTop.classList.remove("active");
     }
 });
-
-// btn menu burger
-const burgerMenu = document.querySelector(".burgerMenu");
-burgerMenu.addEventListener("click", function () {
-
-});
-
-function myFunction() {
-    let element = document.getElementById("burgerMenu");
-    element.classList.toggle("mystyle");
-};

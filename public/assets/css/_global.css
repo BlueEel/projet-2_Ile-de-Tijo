@@ -74,7 +74,6 @@ body > main {
     body > main {
         backdrop-filter: blur(5px);
         background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-        box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.5);
         border-radius: 10px;
         margin-top: var(--body-spacing);
         margin-left: var(--body-spacing);

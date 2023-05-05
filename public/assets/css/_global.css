@@ -43,11 +43,19 @@ h2 {
     font-family: var(--title-font);
 }
 
+.bloc-center {
+    margin: 0 auto;
+}
+
 .center {
     text-align: center;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.rounded {
+    border-radius: 10px;
 }
 

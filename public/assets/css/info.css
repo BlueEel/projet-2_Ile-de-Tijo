@@ -1,32 +1,12 @@
-h1 {
-    text-align: center;
-    font-size: 400%;
-}
-
-h2 {
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size:135%;
-}
-
 div > p {
-    display: flex;
-    max-width: 70%;
-    font-size:x-large;
-    margin:auto;
-}
-
-p {
     display: flex;
     max-width: 85%;
     font-size:x-large;
     margin:auto;
-    margin-bottom: 5%;
 }
 
 .article-right {
     display: flex;
-
     flex-wrap: wrap-reverse;
     width: 100%;
 }
@@ -43,20 +23,17 @@ span {
     margin-top: 3%;
     margin-bottom: 3%;
     border: none;
-    border-top: 2px solid rgb(181, 134, 85);
+    border-top: 2px solid #303034;
     width: 60%;
     margin-left: 20%;
 }
 
-img {
-    border: 2px solid rgb(181, 134, 85);
-    border-radius: var(--border-radius);
+.img_infos {
     margin-bottom: 10% ;
 }
 
 .map {
     margin: auto;
-    border: 2px solid rgb(181, 134, 85);
     border-radius: var(--border-radius);
     width: 100%;
     height: 300px;

@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
     --font-family: 'Open Sans', sans-serif;
     --font-size: 1.1rem;
     --white-color: #fff;
@@ -6,8 +7,49 @@
     --background-input-field: #CF7F42;
     --border-input-field: #81593A;
     --nav-width: 270px;
+=======
+    --font-family: 'Chelsea Market','Open Sans', sans-serif;
+    --font-size: 100%;
+
+    /* --nav-width: clamp(220px, 16.875rem, 400px); */
+>>>>>>> 2e82b11bdf261e4611d57f0fd51be13450214b06
     --nav-width: clamp(220px, 16.875rem, 400px);
     --body-spacing: 3rem;
+}
+
+:root:not([data-theme=dark]), [data-theme=light] {
+    --color: #303034;
+    --white-color: #fafafc;
+    --h1-color: #025296;
+    --h2-color: #025296;
+    --h3-color: #025296;
+    --h4-color: #025296;
+    --h5-color: #025296;
+    --h6-color: #025296;
+}
+
+h1{
+    text-align: center;
+    font-size: 400%
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size:135%;
+}
+
+article {
+    background-color: var(--white-color);
+}
+
+p {
+    display: flex;
+    max-width: 85%;
+    font-size:x-large;
+    margin:auto;
+    margin-bottom: 5%;
+    /* text-shadow: 1px 1px 1px #000000; */
 }
 
 body {
@@ -18,13 +60,13 @@ body {
 body > main {
     backdrop-filter: blur(5px);
     background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-top: var(--body-spacing);
     margin-left: calc(var(--body-spacing) * 2 + var(--nav-width));
     margin-right: var(--body-spacing);
     padding: var(--block-spacing-vertical);
     width: auto;
+    height: 90vh;
 }
 
 .background {
@@ -38,6 +80,7 @@ body > main {
     overflow: auto;
 }
 
+<<<<<<< HEAD
 h2 {
     text-align: center;
     font-family: var(--title-font);
@@ -59,3 +102,18 @@ h2 {
     border-radius: 10px;
 }
 
+=======
+@media screen and (max-width: 750px) {
+    body > main {
+        backdrop-filter: blur(5px);
+        background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+        border-radius: 10px;
+        margin-top: var(--body-spacing);
+        margin-left: var(--body-spacing);
+        margin-right: var(--body-spacing);
+        padding: var(--block-spacing-vertical);
+        width: auto;
+        height: 90vh;
+    }
+}
+>>>>>>> 2e82b11bdf261e4611d57f0fd51be13450214b06

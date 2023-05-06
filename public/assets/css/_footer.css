@@ -1,0 +1,115 @@
+body > footer {
+    backdrop-filter: blur(5px);
+    background-color: whitesmoke;
+    /* opacity:calc(80%); */
+    /* background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); */
+    border-radius: 10px;
+    margin-top: var(--body-spacing);
+    margin-bottom: var(--body-spacing);
+    margin-left: calc(var(--body-spacing) * 2 + var(--nav-width));
+    margin-right: var(--body-spacing);
+    padding: var(--block-spacing-vertical);
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.footer-image {
+    border: none;
+}
+
+
+/* li {
+    text-decoration: none;
+    list-style-type: none;
+} */
+
+ul li {
+    list-style: none;
+}
+
+.footer-map {
+    border: none;
+    border-radius: 42% 58% 33% 67% / 70% 29% 71% 30% ;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-endline {
+    margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: 20%;
+	margin-right: 20%;
+    border: #41DACB 1px solid;
+    display: flex;
+}
+
+.social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+    background-color: #41DACB;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+    color: #207864;
+	transition: all 0.5s ease;
+}
+.social-links a:hover{
+    color: #662E13;
+    background-color: #D5FBE2;
+}
+
+footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+}
+
+    .container-footer-end {
+        display: flex;
+        justify-content: center;
+    }
+
+/* DÉBUT Bouton fait avec HTML & CSS & JS */
+.btnScrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    border: none;
+    z-index: 99;
+    opacity: 0;
+}
+.btnScrollToTop.active{
+    opacity: 1;
+}
+
+  .btnScrollToTop:hover {
+    filter: brightness(130%);
+    cursor: pointer;
+}
+/* FIN Bouton fait avec HTML & CSS & JS */
+
+@media screen and (max-width: 750px) {
+    body > footer {
+        backdrop-filter: blur(5px);
+        background-color: whitesmoke;
+        /* opacity:calc(80%); */
+        /* background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); */
+        border-radius: 10px;
+        margin-top: var(--body-spacing);
+        margin-left: var(--body-spacing);
+        margin-right: var(--body-spacing);
+        padding: var(--block-spacing-vertical);
+        width: auto;
+        height: auto;
+    }
+    .footer-element, .phone_adress{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

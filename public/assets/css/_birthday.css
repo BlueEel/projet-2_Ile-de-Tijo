@@ -1,0 +1,17 @@
+.formule {
+    border: 1px solid var(--border-input-field);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+td {
+    border: none;
+}
+
+.link-booking {
+    background-color: var(--background-input-field);
+    border: 1px solid var(--border-input-field);
+    color: var(--textColor-input-field);
+    padding: 10px;
+    text-align: center;
+}

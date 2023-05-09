@@ -1,10 +1,47 @@
 :root {
-    --font-family: 'Chelsea Market','Open Sans', sans-serif;
-    --font-size: 100%;
+    --font-family: 'Open Sans', sans-serif;
+    --font-size: 1.1rem;
     --white-color: #fff;
-
+    --title-font: 'Chelsea Market', sans-serif;
+    --background-input-field: #CF7F42;
+    --border-input-field: #81593A;
+    --nav-width: 270px;
     --nav-width: clamp(220px, 16.875rem, 400px);
     --body-spacing: 3rem;
+}
+
+:root:not([data-theme=dark]), [data-theme=light] {
+    --color: #303034;
+    --white-color: #fafafc;
+    --h1-color: #025296;
+    --h2-color: #025296;
+    --h3-color: #025296;
+    --h4-color: #025296;
+    --h5-color: #025296;
+    --h6-color: #025296;
+}
+
+h1{
+    text-align: center;
+    font-size: 400%
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size:135%;
+}
+
+article {
+    background-color: var(--white-color);
+}
+
+p {
+    display: flex;
+    max-width: 85%;
+    font-size:x-large;
+    margin:auto;
+    margin-bottom: 5%;
 }
 
 body {
@@ -15,13 +52,13 @@ body {
 body > main {
     backdrop-filter: blur(5px);
     background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-top: var(--body-spacing);
     margin-left: calc(var(--body-spacing) * 2 + var(--nav-width));
     margin-right: var(--body-spacing);
     padding: var(--block-spacing-vertical);
     width: auto;
+    height: auto;
 }
 
 .background {
@@ -33,4 +70,39 @@ body > main {
     inset: 0;
     z-index: -1;
     overflow: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.bloc-center {
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    body > main {
+        backdrop-filter: blur(5px);
+        background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+        border-radius: 10px;
+        margin-top: var(--body-spacing);
+        margin-left: var(--body-spacing);
+        margin-right: var(--body-spacing);
+        padding: var(--block-spacing-vertical);
+        width: auto;
+        height: 90vh;
+    }
 }

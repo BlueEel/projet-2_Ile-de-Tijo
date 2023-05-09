@@ -9,6 +9,6 @@ class JeuxController extends AbstractController
      */
     public function index(): string
     {
-        return $this->twig->render('jeux/index.html.twig');
+        return $this->twig->render('Jeux/index.html.twig');
     }
 }

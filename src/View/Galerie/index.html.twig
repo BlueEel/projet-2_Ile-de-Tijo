@@ -14,42 +14,47 @@
 
 {% block content %}
 
-	<h1>GALLERIE</h1>
-	<p class = "TextGallerie">Bienvenue dans notre galerie de photos ! Nous sommes fiers de vous présenter notre espace de jeu interactif et amusant pour les tout-petits. Nous avons une grande variété d'installations de jeux pour enfants, y compris des toboggans, des structures de jungle et bien plus encore!
+	<h1>GALERIE</h1>
+	<p class = "TextGalerie">Bienvenue dans notre galerie de photos ! Nous sommes fiers de vous présenter notre espace de jeu interactif et amusant pour les tout-petits. Nous avons une grande variété d'installations de jeux pour enfants, y compris des toboggans, des structures de jungle et bien plus encore!
 	</p>
-			<div class="swiper2">
 
-					<div class="swiper-slide2">
+    <div class="swiper-container">
+			<div class="swiper2">
+            <div class="swiper-wrapper">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu1_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu2_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu3_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu4_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu5_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu6_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu7_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu8_v2.PNG">
 					</div>
-					<div class="swiper-slide2">
+					<div class="swiper-slide">
 						<img src="assets/images/jeu9_v2.PNG">
 					</div>
 				</div>
+                </div>
+                </div>
+
 {% endblock %}
 
 {% block javascript %}
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script src="/assets/js/script_gallerie.js"></script>
+	<script src="/assets/js/script_galerie.js"></script>
 {% endblock %}

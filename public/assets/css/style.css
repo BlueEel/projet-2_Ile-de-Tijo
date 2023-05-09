@@ -4,7 +4,7 @@
 @import '_global.css';
 @import '_nav.css';
 @import '_footer.css';
-@import 'jeux.css';
-@import 'snack.css';
-@import 'info.css';
-@import 'galerie.css';
+@import '_jeux.css';
+@import '_snack.css';
+@import '_info.css';
+@import '_galerie.css';

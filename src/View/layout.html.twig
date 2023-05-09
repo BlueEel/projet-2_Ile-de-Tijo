@@ -13,25 +13,6 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 		<link rel="icon" type="image/png" href="img/koala_tete.png"/> {% block stylesheet %}{% endblock %}
 	</head>
-	<body>
-		<div class="background"></div>
-		<aside>
-			<nav>
-				<ul>
-					<li><a class="koala_tete" href="/"></a></li>
-					<li><a class="planche" href="/jeux">Jeux</a></li>
-					<li><a class="planche" href="/galerie">Galerie</a></li>
-					<li><a class="planche" href="/snack">Snack</a></li>
-					<li><a class="planche" href="/infos">Infos Pratiques</a></li>
-					<li><a class="planche-rouge" href="#">Réservation</a></li>
-				</ul>
-			</nav>
-		</aside>
-		<main>
-			{% block content %}{% endblock %}
-		</main>
-        {% block javascript %}{% endblock %}
-	</body>
 </html>
 		<body>
 			<div class="background"></div>
@@ -40,7 +21,7 @@
 					<ul>
 						<li><a class="koala_tete" href="/"></a></li>
 						<li><a class="planche" href="/jeux">Jeux</a></li>
-						<li><a class="planche" href="/">Galerie</a></li>
+						<li><a class="planche" href="/galerie">Galerie</a></li>
 						<li><a class="planche" href="/snack">Snack</a></li>
 						<li><a class="planche" href="/infos">Infos Pratiques</a></li>
 						<li><a class="planche-rouge" href="#">Réservation</a></li>
@@ -51,5 +32,6 @@
 				{% block content %}{% endblock %}
 			</main>
 			{% include '_footer.html.twig' %}
+            {% block javascript %}{% endblock %}
 		</body>
     </html>

@@ -14,8 +14,8 @@ class BookingManager extends AbstractManager
     public function insert(array $booking): int
     {
         $sql = "INSERT INTO " . self::TABLE .
-        " (`lastname`, `firstname`, `phone`, `email`, `date`, `time`, `comment`) 
-        VALUES (:lastname, :firstname, :phone, 
+        " (`lastname`, `firstname`, `phone`, `email`, `date`, `time`, `comment`)
+        VALUES (:lastname, :firstname, :phone,
         :email, :date, :time, :comment)";
 
         $statement = $this->pdo->prepare($sql);

@@ -17,4 +17,5 @@ return [
     'admin/bookings/delete' => ['AdminBookingController', 'delete',],
     // Birthday
     'anniversaire' => ['BirthdayController', 'index',],
+    
 ];

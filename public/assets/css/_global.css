@@ -1,8 +1,11 @@
 :root {
-    --font-family: 'Chelsea Market','Open Sans', sans-serif;
-    --font-size: 100%;
-
-    /* --nav-width: clamp(220px, 16.875rem, 400px); */
+    --font-family: 'Open Sans', sans-serif;
+    --font-size: 1.1rem;
+    --white-color: #fff;
+    --title-font: 'Chelsea Market', sans-serif;
+    --background-input-field: #CF7F42;
+    --border-input-field: #81593A;
+    --nav-width: 270px;
     --nav-width: clamp(220px, 16.875rem, 400px);
     --body-spacing: 3rem;
 }
@@ -39,7 +42,6 @@ p {
     font-size:x-large;
     margin:auto;
     margin-bottom: 5%;
-    /* text-shadow: 1px 1px 1px #000000; */
 }
 
 body {
@@ -56,7 +58,7 @@ body > main {
     margin-right: var(--body-spacing);
     padding: var(--block-spacing-vertical);
     width: auto;
-    height: 90vh;
+    height: auto;
 }
 
 .background {
@@ -68,6 +70,27 @@ body > main {
     inset: 0;
     z-index: -1;
     overflow: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.bloc-center {
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.rounded {
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 750px) {

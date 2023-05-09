@@ -3,7 +3,13 @@
 @import '_pico.min.css';
 @import '_global.css';
 @import '_nav.css';
+<<<<<<< HEAD
+@import '_form.css';
+@import '_birthday.css';
+@import '_booking.css';
+=======
 @import '_footer.css';
+>>>>>>> 2e82b11bdf261e4611d57f0fd51be13450214b06
 @import 'jeux.css';
 @import 'snack.css';
 @import 'info.css';

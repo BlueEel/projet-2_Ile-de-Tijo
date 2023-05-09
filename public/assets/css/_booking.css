@@ -1,0 +1,30 @@
+input, textarea, button {
+    background-color: var(--background-input-field);
+    border: 1px solid var(--border-input-field);
+    color: var(--textColor-input-field);
+    font-weight: bold;
+}
+
+input[placeholder] {
+    color: #73828C;
+}
+
+.error {
+    text-shadow: #fff 0.1em 0.1em 0.2em;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/*****************************/
+/****** ADMINISTRATION *******/
+/*****************************/
+
+table#tabAdminBookings {
+    background-color: var(--background-input-field);
+    border: 1px solid var(--border-input-field);
+    color: var(--textColor-input-field);
+}
+
+table#tabAdminBookings tr td {
+    border-bottom: 1px solid var(--border-input-field);
+}

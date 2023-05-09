@@ -1,5 +1,4 @@
 :root {
-<<<<<<< HEAD
     --font-family: 'Open Sans', sans-serif;
     --font-size: 1.1rem;
     --white-color: #fff;
@@ -7,12 +6,6 @@
     --background-input-field: #CF7F42;
     --border-input-field: #81593A;
     --nav-width: 270px;
-=======
-    --font-family: 'Chelsea Market','Open Sans', sans-serif;
-    --font-size: 100%;
-
-    /* --nav-width: clamp(220px, 16.875rem, 400px); */
->>>>>>> 2e82b11bdf261e4611d57f0fd51be13450214b06
     --nav-width: clamp(220px, 16.875rem, 400px);
     --body-spacing: 3rem;
 }
@@ -49,7 +42,6 @@ p {
     font-size:x-large;
     margin:auto;
     margin-bottom: 5%;
-    /* text-shadow: 1px 1px 1px #000000; */
 }
 
 body {
@@ -66,7 +58,7 @@ body > main {
     margin-right: var(--body-spacing);
     padding: var(--block-spacing-vertical);
     width: auto;
-    height: 90vh;
+    height: auto;
 }
 
 .background {
@@ -80,7 +72,6 @@ body > main {
     overflow: auto;
 }
 
-<<<<<<< HEAD
 h2 {
     text-align: center;
     font-family: var(--title-font);
@@ -102,7 +93,6 @@ h2 {
     border-radius: 10px;
 }
 
-=======
 @media screen and (max-width: 750px) {
     body > main {
         backdrop-filter: blur(5px);
@@ -116,4 +106,3 @@ h2 {
         height: 90vh;
     }
 }
->>>>>>> 2e82b11bdf261e4611d57f0fd51be13450214b06

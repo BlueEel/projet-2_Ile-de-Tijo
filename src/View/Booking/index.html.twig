@@ -5,7 +5,6 @@
 
 {% block content %}
     <h2>Réservation</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum pariatur dolores corrupti eaque minus commodi, iusto delectus quam quae molestias quis nobis amet natus eos, fugit cupiditate magni tenetur dolor!</p>
     <article>
         <p class="error">
             {% for error in errors %}
@@ -14,17 +13,17 @@
         </p>
         <form name="booking" method="post" action="">
             <div class="grid">
-                <label for="lastname">Nom de famille</label><input type="text" id="lastname" name="lastname" max="255" placeholder="Nom">
-                <label for="firstname">Prénom</label><input type="text" id="firstname" name="firstname" max="255" placeholder="Prénom">
+                <label for="lastname">Nom de famille <input type="text" id="lastname" name="lastname" max="255"></label>
+                <label for="firstname">Prénom <input type="text" id="firstname" name="firstname" max="255"></label>
             </div>
-            <label for="phone">Numéro de téléphone</label><input type="tel" id="phone" name="phone" max="100" placeholder="Téléphone">
-            <label for="email">Adresse e-mail</label><label for="email"></label><input type="email" id="email" name="email" max="10" placeholder="Email">
+            <label for="phone">Numéro de téléphone <input type="tel" id="phone" name="phone" max="100"></label>
+            <label for="email">Adresse e-mail <input type="email" id="email" name="email" max="10"></label>
             <div class="grid">
-                <label for="date">Date de réservation</label><input type="date" id="date" name="date">
-                <label for="time">Horaire de réservation</label><input type="time" id="time" name="time">
+                <label for="date">Date de réservation <input type="date" id="date" name="date"></label>
+                <label for="time">Horaire de réservation <input type="time" id="time" name="time"></label>
             </div>
             <textarea name="comment" rows="5">Objet, nombre d'enfants...</textarea>
             <button>Envoyer</button>
         </form>
-    <article>
+    </article>
 {% endblock %}

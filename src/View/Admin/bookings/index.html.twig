@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Administration : Affichage des réservations{% endblock %}
+
+{% block content %}
+    <h2>Administration : Affichage des réservations</h2>
+
+    <table id="tabAdminBookings">
+        <!-- On parcourt le tableau des entrées depuis la BDD, puis on les affiche -->
+        {% for booking in bookings %}
+            <form action="bookings/delete" method="post">
+                <tr>
+                    <td>
+                        <b>#{{ booking.id }}</b>&nbsp;-&nbsp;
+                        {{ booking.lastname }}&nbsp;-&nbsp;
+                        {{ booking.firstname }}&nbsp;-&nbsp;
+                        <a href="tel:{{ booking.phone }}">{{ booking.phone }}</a>&nbsp;-&nbsp;
+                        <a href="mailto:{{ booking.email }}">{{ booking.email }}</a>&nbsp;-&nbsp;
+                        {{ booking.date }}&nbsp;-&nbsp;
+                        {{ booking.time }}
+                        {% if booking.comment != '' %} <br> {{ booking.comment }} {% endif %}<br><br>
+                        <input type="hidden" name="id" value="{{ booking.id }}>">
+                        <input type="submit" value="Supprimer" />
+                    </td>
+                </tr>
+            </form>
+        {% else %}
+            <b>Il n'y a actuellement aucune réservation</b>
+        {% endfor %}
+    </table>
+{% endblock %}

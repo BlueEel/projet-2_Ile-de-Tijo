@@ -56,7 +56,7 @@ body > main {
     margin-right: var(--body-spacing);
     padding: var(--block-spacing-vertical);
     width: auto;
-    height: 90vh;
+    height: auto;
 }
 
 .background {

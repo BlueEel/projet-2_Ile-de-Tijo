@@ -11,9 +11,8 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap">
 		<link rel="stylesheet" href="/assets/css/style.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-		<link rel="icon" type="image/png" href="img/koala_tete.png"/> {% block stylesheet %}{% endblock %}
-	</head>
-</html>
+		<link rel="icon" type="image/png" href="/assets/images/koala_tete.png"/> {% block stylesheet %}{% endblock %}
+		</head>
 		<body>
 			<div class="background"></div>
 			<aside class="nav">
@@ -32,6 +31,6 @@
 				{% block content %}{% endblock %}
 			</main>
 			{% include '_footer.html.twig' %}
-            {% block javascript %}{% endblock %}
+			{% block javascript %}{% endblock %}
 		</body>
 	</html>

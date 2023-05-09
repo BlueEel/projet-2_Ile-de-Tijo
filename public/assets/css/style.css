@@ -2,9 +2,9 @@
 
 @import '_pico.min.css';
 @import '_global.css';
-/* @import 'menu.css'; */
 @import '_nav.css';
-@import '_jeux.css';
-@import '_snack.css';
-@import '_info.css';
-@import '_galerie.css';
+@import '_footer.css';
+@import 'jeux.css';
+@import 'snack.css';
+@import 'info.css';
+@import 'galerie.css';

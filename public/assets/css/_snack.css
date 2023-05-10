@@ -1,6 +1,20 @@
-.Menus {
-    font-family: 'Chelsea Market', cursive;
-    font-size: xx-large;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formule {
+    width: 40%;
+    height: 40%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.lien {
+    color: white;
     text-align: center;
 }
 
@@ -29,11 +43,6 @@
     }
 }
 
-.Carte {
-    font-family: 'Chelsea Market', cursive;
-    font-size: xx-large;
-    text-align: center;
-}
 
 .carteimg {
     animation: float 2s ease-in-out infinite

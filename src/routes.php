@@ -18,4 +18,5 @@ return [
     // Birthday
     'anniversaire' => ['BirthdayController', 'index',],
     'galerie' => ['GalerieController', 'index',],
+    'snack/formule' => ['FormuleController', 'index',],
 ];

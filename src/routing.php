@@ -12,8 +12,8 @@ $routes = require_once __DIR__ . '/../src/routes.php';
 // If required route is not is $routes, return a 404 Page not found error
 if (!key_exists($route, $routes)) {
     header("HTTP/1.0 404 Not Found");
-    echo '<style>body { font-family: Horrible; text-align: center; text-shadow: #fff 0.2rem 0.2rem 0.2rem; color: #ff0000; font-weight: bold; text-transform: uppercase; font-family: Tahoma; font-size: 20pt; display: flex; align-items: center; justify-content: center; background: url("/assets/images/404.png") no-repeat; }</style>';
-    echo '<h1>Vous êtes sur la mauvaise île<br>(erreur 404)</h1>';
+    $homeController = new HomeController();
+    echo $homeController->notFound();
     exit();
 }
 

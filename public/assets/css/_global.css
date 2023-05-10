@@ -5,7 +5,7 @@
     --background-input-field: #CF7F42;
     --border-input-field: #81593A;
     --nav-width: 270px;
-    --nav-width: clamp(220px, 16.875rem, 400px);
+    --nav-width: clamp(220px, 13.875rem, 400px);
     --body-spacing: 3rem;
 }
 

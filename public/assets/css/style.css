@@ -7,6 +7,8 @@
 @import '_birthday.css';
 @import '_booking.css';
 @import '_footer.css';
-@import 'jeux.css';
-@import 'snack.css';
-@import 'info.css';
+@import '_jeux.css';
+@import '_snack.css';
+@import '_info.css';
+@import '_galerie.css';
+@import '_accueil.css';

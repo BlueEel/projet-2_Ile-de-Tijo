@@ -11,8 +11,8 @@ $routes = require_once __DIR__ . '/../src/routes.php';
 
 // If required route is not is $routes, return a 404 Page not found error
 if (!key_exists($route, $routes)) {
-    $homeController = new HomeController();
     header("HTTP/1.0 404 Not Found");
+    $homeController = new HomeController();
     echo $homeController->notFound();
     exit();
 }

@@ -8,6 +8,26 @@ td {
     border: none;
 }
 
+.titles {
+    display: flex;
+justify-content: center;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.conditions {
+    display: flex;
+    align-items: center;
+}
+
 .link-booking {
     background-color: var(--background-input-field);
     border: 1px solid var(--border-input-field);

@@ -20,6 +20,10 @@ aside > nav {
     width: var(--nav-width);
 }
 
+aside > nav > label, aside > nav > input{
+    display: none;
+}
+
 aside > nav > ul:last-of-type {
     margin: 0;
     padding: 0;
@@ -82,11 +86,56 @@ aside > nav > ul > li > a:hover {
 
 @media screen and (max-width: 750px) {
     aside {
-        z-index: 100;
         top: 0;
         left: 0;
+        height: 3.5rem;
+        width: 1rem;
     }
-    .nav {
+    .nav{
+        z-index: 900;
+    }
+    .navbar {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 0;
+    }
+    .icon {
+        fill: white;
+        cursor: pointer;
+    }
+    .navbar input, .nav-menu, .dropdown {
         display: none;
     }
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+    aside > nav > label, aside > nav > input{
+        display: flex;
+    }
+    .nav-menu{
+        background: #D5FBE2;
+        border-radius: 10px;
+        position: absolute;
+        top: 3.5rem;
+        left: .5rem;
+    }
+    aside > nav > ul:last-of-type {
+        padding: 0rem 1rem 2rem 1rem;
+    }
+    aside > nav > label > svg{
+        border: #662E13 2px solid;
+        padding: .2rem;
+        border-radius: 5px;
+    }
+    aside > nav > label > svg:hover{
+        border: #D5FBE2 2px solid;
+    }
+    aside > nav > label > svg > rect{
+        color: #662E13;
+    }
+
 }

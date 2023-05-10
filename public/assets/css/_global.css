@@ -5,7 +5,7 @@
     --background-input-field: #CF7F42;
     --border-input-field: #81593A;
     --nav-width: 270px;
-    --nav-width: clamp(220px, 16.875rem, 400px);
+    --nav-width: clamp(220px, 13.875rem, 400px);
     --body-spacing: 3rem;
 }
 
@@ -98,10 +98,10 @@ h2 {
         background: linear-gradient(100deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
         border-radius: 10px;
         margin-top: var(--body-spacing);
-        margin-left: var(--body-spacing);
-        margin-right: var(--body-spacing);
-        padding: var(--block-spacing-vertical);
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
         width: auto;
-        height: 90vh;
+        height: auto;
     }
 }

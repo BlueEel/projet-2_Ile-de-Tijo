@@ -1,8 +1,7 @@
 :root {
-    --font-family: 'Open Sans', sans-serif;
+    --font-family: 'Chelsea Market', sans-serif;
     --font-size: 1.1rem;
     --white-color: #fff;
-    --title-font: 'Chelsea Market', sans-serif;
     --background-input-field: #CF7F42;
     --border-input-field: #81593A;
     --nav-width: 270px;
@@ -103,6 +102,6 @@ h2 {
         margin-right: var(--body-spacing);
         padding: var(--block-spacing-vertical);
         width: auto;
-        height: 90vh;
+        height: auto;
     }
 }
